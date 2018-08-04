@@ -56,10 +56,10 @@
     <header class="masthead d-flex">
       <div class="container text-center my-auto">
         <h1 class="mb-1">Grace Copplestone</h1>
-        <h3 class="mb-5">
+        <!--<h3 class="mb-5">
           <em>Manufacturing and research engineer | Rapid prototyping</em><br>
           <em>Runner | Trombone player | Mountain biker</em>
-        </h3>
+        </h3>-->
         <!--<a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Portfolio</a>-->
       </div>
       <div class="overlay"></div>
@@ -72,11 +72,11 @@
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h2>About</h2>
-            <p class="lead mb-5">I am an engineer from Bristol, UK. I've had opportunities to travel and work around the world and will be moving back to Europe from the US in the Summer of 2018 to my engineering career.</p>
+            <p class="lead mb-5">I am an engineer from Bristol, UK. I've had opportunities to travel and work around the world and will be moving back to Europe from the US in the Summer of 2018.</p>
 
-            <p class="lead mb-5">I completed a Bachelors and Masters degree in Manufacturing Engineering at the University of Cambridge, UK. I have experience as a hands-on rapid prototyping engineer at Hanson Robotics in Hong Kong, the NASA Ames Research Center in California, USA and the Center of Bits and Atoms at Massachusetts Institute of Technology, USA. My work at MIT is documented <a href="https://copplestone.pages.cba.mit.edu/home/">here</a>, my thesis work is documented <a href="https://copplestone.pages.cba.mit.edu/thesis/">here</a>.</p>
+            <p class="lead mb-5">I completed a Bachelors and Masters degree in Manufacturing Engineering at the University of Cambridge, UK. I have experience as a product manager at Hanson Robotics in Hong Kong, research scientist at the NASA Ames Research Center in California, USA and hands-on rapid prototyping and software engineer at the Center of Bits and Atoms at Massachusetts Institute of Technology, USA. My work at MIT is documented <a href="https://copplestone.pages.cba.mit.edu/home/">here</a>, my thesis work is documented <a href="https://copplestone.pages.cba.mit.edu/thesis/">here</a>.</p>
 
-            <p class="lead mb-5">In my work I have enjoyed using a range of fabrication techniques including CNC milling, water jet cutting, laser cutting and 3D printing. In addition to this I enjoy managing logistics and supply chain tasks.</p>
+            <p class="lead mb-5">In my work I have enjoyed using a range of fabrication techniques including CNC milling, water jet cutting, laser cutting and 3D printing. I have combined this with developing software skills using Python, Javascript, Matlab, C++, HTML, CSS for a range of projects including feedback control, optimisation and web design.</p>
               <!--<a href="https://unsplash.com/">Unsplash</a>!</p>-->
             <!--<a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>-->
           </div>
@@ -84,13 +84,74 @@
       </div>
     </section>
 
+    <!-- Software projects
+    Feedback control of inverted pendulum
+    Voice coil design
+    Nature of Mathematical Programming
+    Code First Girls
+  -->
+    <!-- Portfolio -->
+    <section class="content-section" id="portfolio">
+      <div class="container">
+        <div class="content-section-heading text-center">
+          <!--<h3 class="text-secondary mb-0">Portfolio</h3>-->
+          <h2 class="mb-5">Software projects</h2>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="https://copplestone.pages.cba.mit.edu/home/side_projects/lamp.html">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Web design</h2>
+                  <p class="mb-0">I learned the basics at Code First:Girls, since then I've built websites using HTML, CSS, Javascript, Ruby on Rails and Sinatra with version control through Github and Gitlab.</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="assets/img/web_design.png" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="http://fab.cba.mit.edu/classes/864.17/people/copplestone/final_project/index.html">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Pendulum balancing</h2>
+                  <p class="mb-0">I used feedback control to balance an inverted pendulum and applied Nelder Mead to search for more effective gains for the feedback system. Project used Javascript canvas and Smoothie charts for visualisation and Python for the search.</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="assets/img/inverted_pendulum.png" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="https://copplestone.pages.cba.mit.edu/home/papers/june2017_aiaa_airships.pdf">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Airship optimization</h2>
+                  <p class="mb-0">Coauthored a paper with NASA colleague on multi-objective constrained optimization for lighter-than-air vehicle structures. Project used Python and SciPy.</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="assets/img/airship.png" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="https://copplestone.github.io/jumping_robot/">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Fabrication and control of gymnastics robot</h2>
+                  <p class="mb-0">The MIT Bio-Inspired Robotics class is led by Sangbae Kim. In this class I worked in a team build and control a robot to perform a forward flip.</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="assets/img/pike.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Portfolio -->
     <section class="content-section" id="portfolio">
       <div class="container">
         <div class="content-section-heading text-center">
           <!--<h3 class="text-secondary mb-0">Portfolio</h3>-->
-          <h2 class="mb-5">Recent Projects</h2>
+          <h2 class="mb-5">Hardware projects</h2>
         </div>
         <div class="row no-gutters">
           <div class="col-lg-6">
@@ -105,14 +166,14 @@
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="https://copplestone.github.io/jumping_robot/">
+            <a class="portfolio-item" href="https://ieeexplore.ieee.org/document/7943733/?part=1">
               <span class="caption">
                 <span class="caption-content">
-                  <h2>Gynmastics robot</h2>
-                  <p class="mb-0">The MIT Bio-Inspired Robotics class is led by Sangbae Kim. In this class I worked in a team build and control a robot to perform a forward flip.</p>
+                  <h2>Robotic assembly of structures</h2>
+                  <p class="mb-0">At NASA Ames Research Center I worked in a team to automate the assembly of digital materials using two 6-DOF robot arms and a 3-axis gantry. Coauthored the paper linked.</p>
                 </span>
               </span>
-              <img class="img-fluid" src="assets/img/pike.jpg" alt="">
+              <img class="img-fluid" src="assets/img/nasa_assembler.png" alt="">
             </a>
           </div>
           <div class="col-lg-6">
@@ -127,7 +188,9 @@
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="https://copplestone.pages.cba.mit.edu/home/side_projects/bike_bags.html">
+            <!--<a class="portfolio-item" href="https://copplestone.pages.cba.mit.edu/home/side_projects/bike_bags.html">-->
+            <a class="portfolio-item" href="https://vimeo.com/282321449">
+
               <span class="caption">
                 <span class="caption-content">
                   <h2>Bikes</h2>
