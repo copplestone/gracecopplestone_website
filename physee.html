@@ -33,16 +33,87 @@
     <h2>Materials</h2>
     <ul>
         <li>Glass</li>
-        <li>Aluminium frame made from extruded pieces</li>
-        <li>Primary seal such as <a href="http://www.thermosealgroup.com/product/details/40/pib-butyl-tape">Polyisobutyl (PIB)</a> tape</li>
-        <li>Secondary seal such as Polysulfide<a href=""></a>
+        <li>Space bars made from aluminium extruded pieces</li>
+        <li>Primary seal made from <a href="http://www.thermosealgroup.com/product/details/40/pib-butyl-tape">Polyisobutyl (PIB)</a>. It is hot applied on the spacer bars by automatic lines, hand application and prefabricated strips are also possible. PIB is an excellent barrier to moisture vapor, argon gas, or water. But polyisobutylene, or “PIB”, alone lacks enough structural strength to keep the glass lites from shifting or coming apart during transportation and glazing, so it has to be supplemented by a “secondary seal” to provide structural integrity.</li>
+        <li>Secondary seal such as Polysulfide has good structural integrity, and, like “PIB”, it serves as a barrier for moisture vapor, argon gas, and water. It is mixed together from two parts and applied wet, curing within 1-4 hours. Silicone can also be used as a secondard seal. It offers very strong adhesion to glass and aluminum, which provides structural integrity for even the largest and heaviest glass components. And silicone will not degrade if exposed to UV rays from the sun, so it is suitable for insulating glass in structural silicone glazing applications. But silicone provides virtually no barrier to water vapor, water, or argon gas.</li>
+        <li>Noble gas filling - 
     </ul>
 
-    <p>Info on sealing stages <a href="http://www.syracuseglass.com/E-DOCS/Insulating%20Glass/EDOCS/Choosing%20Between%20Polysulfide%20and%20Silicone%20Secondary%20Seals.pdf">(taken from here)</a> - The “primary seal”, polyisobutylene, is applied to the regular aluminum or thermally broken aluminum airspace, and that spacer is then positioned between the glass lites. The polyisobutylene is an excellent barrier to moisture vapor, argon gas, or water. But polyisobutylene, or “PIB”, alone lacks enough structural strength to keep the glass lites from shifting or coming apart during transportation and glazing, so it has to be supplemented by a “secondary seal” to provide structural integrity.</p> 
+    <p>Info on sealing stages <a href="http://www.syracuseglass.com/E-DOCS/Insulating%20Glass/EDOCS/Choosing%20Between%20Polysulfide%20and%20Silicone%20Secondary%20Seals.pdf">(taken from here)</a> - The “primary seal”, polyisobutylene, is applied to the regular aluminum or thermally broken aluminum airspace, and that spacer is then positioned between the glass lites. The polyisobutylene </p> 
 
-    <p>As a secondary seal Polysulfide provides excellent structural integrity, and, like “PIB”, it serves as a barrier for moisture vapor, argon gas, and water.Silicone can be used as a secondard seal. It offers very strong adhesion to glass and aluminum, which provides structural integrity for even the largest and heaviest glass components. And silicone will not degrade if exposed to UV rays from the sun, so it is suitable for insulating glass in structural silicone glazing applications. But silicone provides virtually no barrier to water vapor, water, or argon gas.</p>
+    <p>As a secondary seal Polysulfide provides excellent </p>
+
+    <p>More resources - <a href="https://www.aisglass.com/sites/default/files/pdfs/technical%20papers/AIS-309.pdf">Paper on seals</a>, </p>
 
     <h2>CAD</h2>
+    <p>I had a go at CADing a simplfied version of a standard IGU configuration.</p>
+    <!--convert test.png -crop 900x900+1600+600 out1.png-->
+    <img src="assets/img/physee/process5.png" style="float: left; width: 19%; margin-left: 1%; margin-top:20px; margin-bottom: 0.5em;">
+    <img src="assets/img/physee/process4.png" style="float: left; width: 19%; margin-left: 1%; margin-top:20px; margin-bottom: 0.5em;">
+    <img src="assets/img/physee/process3.png" style="float: left; width: 19%; margin-left: 1%; margin-top:20px; margin-bottom: 0.5em;">
+    <img src="assets/img/physee/process2.png" style="float: left; width: 19%; margin-left: 1%; margin-top:20px; margin-bottom: 0.5em;">
+    <img src="assets/img/physee/process1.png" style="float: left; width: 19%; margin-left: 1%; margin-top:20px; margin-bottom: 0.5em;">
+    <p style="clear: both;"><br>
+    <p>This sequence of images shows the order of assembly (I have't included the dessicant in this sequence or ventilation holes in the spacer):</p>
+    <ol>
+        <li>Extruded aluminium spacers laid out</li>
+        <li>Corner pieces connect spacers together</li>
+        <li>Primary PIB seal applied to the surface of spacer and corner assembly</li>
+        <li>Glass adherred to the frame</li>
+        <li>Secondary polysulfide seal added</li>
+    </ol>
+
+<h2>Eagle to Fusion 360</h2>
+    <p>This section demonstrates the Eagle to Fusion integration for circuit boards. I designed a simple phototransistor circuit using an <a href="http://academy.cba.mit.edu/classes/input_devices/index.html">example from this webpage</a>. This circuit is designed to output data via a FTDI cable which obviously isn't a decent solution for a power window. I'd need to do more work to add the 3D files for the actual packages, for now I've just used the default blocks. The images show the schematic and board layout created in Eagle and the 3D rendering of the board that was pushed to Fusion. The board is 15mm wide so just big enough to fit within the cavity of an IGU.</p>
+
+    <img src="assets/img/physee/circuit_board_sch.png" style="float: left; width: 40%; margin-left: 9.5%; margin-top:20px; margin-bottom: 0.5em;">
+    <img src="assets/img/physee/circuit_board_brd.png" style="float: left; width: 40%; margin-left: 1%; margin-top:20px; margin-bottom: 0.5em;">
+    <p style="clear: both;"><br>
+    <img src="assets/img/physee/circuit_board_3d.png" style="float: left; width: 40%; margin-left: 9.5%; margin-top:20px; margin-bottom: 0.5em;">
+    <img src="assets/img/physee/circuit_board_in_place.png" style="float: left; width: 40%; margin-left: 1%; margin-top:20px; margin-bottom: 0.5em;">
+    <p style="clear: both;"><br>
+
+    <p>Useful links and guidance:</p>
+    <ul>
+        <li><a href="https://learn.sparkfun.com/tutorials/using-eagle-board-layout/arranging-the-board">Dimensioning the board in Eagle with dimension layer</a>, adjust the existing outline which is on layer 20.</li>
+        <li><a href="https://www.youtube.com/watch?v=3Un_Z0kis6c">Consolidating parts in the design into a single library using .ulp (User Language Program) script.</a> <a href="http://eagle.autodesk.com/eagle/ulp?page=43&q%5Bs%5D=uploaded_at+asc">Here's a ulp file to download.</a> Add the downloaded file to Documents/eagle/ulps.</li>
+        <li><a href="https://www.youtube.com/watch?v=DZ8cBNBsJwE">Then need to turn the consolidated library into a managed library</a>, link it to your .sch and .brd files and use circuit.io to match parts with 3D parts. This tutoral doesn't match up with the link that you're sent to in Eagle version 9. But if you visit library.io then you can see your managed library online, you just can't edit it.</li>
+        <li>To get dimension of the board correct, edit the standard outline, don't add your own one.</li>
+
+    </ul>
+
+    <h2>Engineering drawings from Fusion</h2>
+    <p>Very basic drawing but just getting a quick example out.</p>
+    <img src="assets/img/physee/corner_drawing.png" style="float: left; width: 60%; margin-left: 20%; margin-top:20px; margin-bottom: 0.5em;">
+    <p style="clear: both;"><br>
+
+    <h2>Simulating thermal expansion in Fusion</h2>
+
+    <h2>Applicable past projects</h3>
+    <h3>Kelvin reconfigurable structure</h3>
+    <img src="assets/img/physee/kelvin1.png" style="float: left; width: 45%; margin-left:11%; margin-top:20px; margin-bottom: 0.5em;">
+    <img src="assets/img/physee/kelvin2.jpg" style="float: left; width: 32%; margin-left: 1%; margin-top:20px; margin-bottom: 0.5em;">
+    <p style="clear: both;"><br>
+    <img src="assets/img/physee/kelvin3.jpg" style="float: left; width: 39%; margin-left: 12.5%; margin-top:20px; margin-bottom: 0.5em;">
+    <img src="assets/img/physee/kelvin4.jpg" style="float: left; width: 35%; margin-left: 1%; margin-top:20px; margin-bottom: 0.5em;">
+    <p style="clear: both;"><br>
+    <img src="assets/img/physee/kelvin5.jpg" style="float: left; width: 45%; margin-left:1%; margin-top:20px; margin-bottom: 0.5em;">
+    <img src="assets/img/physee/kelvin6.jpg" style="float: left; width: 45%; margin-left: 1%; margin-top:20px; margin-bottom: 0.5em;">
+    <p style="clear: both;"><br>
+
+    <h3>Molding and casting - <a href="http://fab.cba.mit.edu/classes/863.16/section.CBA/people/Copplestone/Week8/index.html">Link</a></h3>
+    <img src="assets/img/physee/molding1.jpg" style="float: left; width: 70%; margin-left: 15%; margin-top:20px; margin-bottom: 0.5em;">
+    <p style="clear: both;"><br>
+    <img src="assets/img/physee/molding2.jpg" style="float: left; width: 35%; margin-left: 15%; margin-top:20px; margin-bottom: 0.5em;">
+    <img src="assets/img/physee/molding3.jpg" style="float: left; width: 32%; margin-left: 1%; margin-top:20px; margin-bottom: 0.5em;">
+    <p style="clear: both;"><br>
+    <img src="assets/img/physee/molding4.jpg" style="float: left; width: 49.5%; margin-left: 7.25%; margin-top:20px; margin-bottom: 0.5em;">
+    <img src="assets/img/physee/molding5.jpg" style="float: left; width: 35%; margin-left: 1%; margin-top:20px; margin-bottom: 0.5em;">
+    <p style="clear: both;"><br>
+
+    <h3>Resin Transfer Molding - <a href="https://copplestone.pages.cba.mit.edu/blended_wing_body/composite_techniques.html">Link</a></li>
+
+    
 
 
 </body>
